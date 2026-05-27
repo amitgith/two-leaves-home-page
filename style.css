@@ -104,7 +104,7 @@ nav {
 }
 .section-1 {
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   background-image: url(assests/imageye___-_imgi_55_AlpineBerry_mobile.png);
   background-size: 209%;
   background-position: 50%;
@@ -132,13 +132,14 @@ nav {
 }
 .section-1 .btn-1 button {
   font-family: figtree;
-  padding: 2vh 35vw;
+  padding: 2vh 30vw;
   font-size: clamp(1rem, 2vw, 3rem);
   border-radius: 2rem;
   border: none;
   color: white;
   background-color: #2a2857;
   cursor: pointer;
+  border: 0.2px solid black;
 }
 .section-1 .btn-1 button:hover {
   color: black;
@@ -148,27 +149,38 @@ nav {
 /* Tablet */
 @media (min-width: 768px) {
   header {
-    height: 4vh;
+    height: 2.8vh;
   }
   .nav-part-2 img {
     height: 5vw;
   }
   .section-1 {
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url(assests/mid\ 720.png);
-    background-size: 100%;
+    background-size: 135%;
     background-position: 58% 48%;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
   }
   .section-1 .btn-1 button {
     font-family: figtree;
-    padding: 2.5vh 43vw;
+    padding: 2.5vh 42vw;
     font-size: clamp(1rem, 1vw, 3vw);
     border-radius: 2rem;
     border: none;
     color: white;
     background-color: #2a2857;
+    border: 0.2px solid black;
+    margin-bottom: 4.5rem;
+  }
+  .section-1 h1 {
+    font-size: 4.5rem;
+  }
+  .section-1 p {
+    font-size: 1.2rem;
   }
 }
 
@@ -182,7 +194,6 @@ nav {
     height: 9%;
     position: absolute;
     top: 3rem;
-
     left: 50%;
     transform: translateX(-50%);
   }
@@ -233,10 +244,10 @@ nav {
   }
   .section-1 {
     width: 100%;
-    min-height: 90vh;
+    min-height: 96vh;
     background-image: url(assests/imgi_55_AlpineBerry.png);
-    background-size: 125%;
-    background-position: 58% 40%;
+    background-size: 145%;
+    background-position: 66% 40%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -244,6 +255,7 @@ nav {
     gap: 1rem;
     padding: 2rem 1.5rem;
     padding-top: 10rem;
+    overflow: hidden;
   }
   .section-1 h1 {
     width: 30%;
@@ -268,5 +280,6 @@ nav {
     border: none;
     color: white;
     background-color: #2a2857;
+    border: 0.2px solid black;
   }
 }
